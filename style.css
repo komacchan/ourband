@@ -1,9 +1,10 @@
 /* style.css */
 body {
     background-image: url('backtest.jpg'); /* 背景画像 */
-    background-size: cover; /* 画像が画面全体にフィット */
+    background-size: cover; /* 背景画像を画面全体にフィット */
     background-position: center center; /* 中央に配置 */
     background-repeat: no-repeat; /* 繰り返しなし */
+    background-attachment: scroll; /* スクロールに合わせて背景が動くように */
     font-family: Arial, sans-serif;
     text-align: center;
     padding: 50px;
@@ -20,7 +21,7 @@ p {
 /* 上部のリンクを右上に配置 */
 .top-links {
     position: fixed;
-    top: 20px;
+    top: 100px; /* 上部リンクを少し下げました */
     right: 20px;
     display: flex;
     gap: 20px;
@@ -43,7 +44,7 @@ p {
 /* Twitterウィジェットを右側に固定 */
 .twitter-widget {
     position: fixed;
-    top: 100px;
+    top: 100px; /* 上部リンクと重ならないように少し下げました */
     right: 20px;
     width: 300px;
     height: 500px;
