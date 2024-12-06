@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ライブ情報</title>
+    <style>
+        body {
+            background-color: #f0f0f0;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 50px;
+        }
+        h1 {
+            font-size: 36px;
+            color: #333;
+        }
+        p {
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+    <h1>ライブ情報</h1>
+    <p>これからのライブ情報をお知らせするよぉ。</p>
+    <ul>
+        <li>20XX年12月15日 - 会場: 東京ドーム</li>
+        <li>20XX年12月22日 - 会場: 大阪城ホール</li>
+    </ul>
+    <p><a href="index.html">ホームに戻るよぉ</a></p>
+</body>
+</html>
