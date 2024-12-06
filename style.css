@@ -4,10 +4,11 @@ body {
     background-size: cover; /* 背景画像を画面全体にフィット */
     background-position: center center; /* 中央に配置 */
     background-repeat: no-repeat; /* 繰り返しなし */
-    background-attachment: scroll; /* スクロールに合わせて背景が動くように */
+    background-attachment: scroll; /* スクロールに合わせて背景が動く */
     font-family: Arial, sans-serif;
     text-align: center;
-    padding: 50px;
+    margin: 0;
+    padding: 0;
 }
 
 h1 {
@@ -21,10 +22,11 @@ p {
 /* 上部のリンクを右上に配置 */
 .top-links {
     position: fixed;
-    top: 100px; /* 上部リンクを少し下げました */
+    top: 20px; /* 上部リンクを画面上部に配置 */
     right: 20px;
     display: flex;
     gap: 20px;
+    z-index: 100; /* 上に表示 */
 }
 
 .top-links a {
@@ -51,6 +53,7 @@ p {
     border: 1px solid #ddd;
     padding: 10px;
     background-color: #fff;
+    z-index: 10; /* 上部リンクより下に表示 */
 }
 
 .twitter-widget iframe {
@@ -61,4 +64,40 @@ p {
 
 .content {
     margin-right: 350px; /* 右側のツイートウィジェットのスペース分だけ内容を左に寄せる */
+    padding: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+    margin: 0 10px;
+    font-size: 18px;
+}
+
+nav a:hover {
+    color: #0073e6;
+}
+
+/* 背景画像が縦長画面でもスクロールするように調整 */
+@media (min-width: 1080px) {
+    body {
+        background-size: auto 100%; /* 縦長画面に合わせて背景画像の高さを100%に */
+    }
+}
+
+/* 小さい画面での調整（モバイル端末） */
+@media (max-width: 600px) {
+    .top-links {
+        top: 10px; /* モバイル画面でも上部に表示 */
+        right: 10px;
+    }
+    .twitter-widget {
+        top: 60px; /* モバイル端末でTwitterウィジェットの位置を少し下げる */
+        width: 250px;
+        height: 400px;
+    }
+    .content {
+        margin-right: 0;
+        padding: 10px;
+    }
 }
