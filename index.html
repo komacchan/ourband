@@ -19,7 +19,6 @@
         <!-- ×ボタン -->
         <span class="close-btn" onclick="closeTwitterWidget()">×</span>
         <a class="twitter-timeline" href="https://twitter.com/Re30R93006?ref_src=twsrc%5Etfw">Tweets by Re30R93006</a>
-        <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
     </div>
 
     <div class="content">
@@ -34,7 +33,18 @@
         </nav>
     </div>
 
+    <!-- Twitterウィジェットスクリプト -->
+    <script async defer src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+    <!-- ここでウィジェットを再読み込み -->
     <script>
+        window.onload = function() {
+            // ページ読み込み後にTwitterウィジェットの読み込みをトリガー
+            if (typeof twttr !== 'undefined') {
+                twttr.widgets.load();
+            }
+        };
+
         // Twitterウィジェットを非表示にする関数
         function closeTwitterWidget() {
             document.getElementById('twitter-widget').style.display = 'none';
