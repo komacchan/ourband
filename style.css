@@ -1,6 +1,6 @@
 /* 背景画像を設定 */
 body {
-    background-image: url('https://github.com/your-username/your-repository-name/raw/main/テスト用.jpg');
+    background-image: url('https://github.com/komacchan/ourband/raw/main/テスト用.jpg');
     background-size: cover; /* 画像を画面全体に合わせる */
     background-position: center center; /* 画像を中央に配置 */
     background-attachment: fixed; /* スクロールしても背景が固定される */
