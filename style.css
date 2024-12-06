@@ -1,34 +1,33 @@
 /* 背景画像設定 */
 body {
-    background-image: url('backtest.jpg'); /* 背景画像 */
-    background-position: top center; /* 背景画像を上部中央に配置 */
-    background-repeat: no-repeat; /* 繰り返しなし */
-    background-attachment: fixed; /* スクロールに合わせて背景画像を固定 */
-    background-size: cover; /* 画面全体にフィットするようにリサイズ */
+    background-image: url('backtest.jpg');
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
     font-family: Arial, sans-serif;
     text-align: center;
     margin: 0;
     padding: 0;
-    height: 100%; /* ページ全体を使う */
+    height: 100%;
 }
 
-/* 見出しや段落のスタイル */
 h1 {
-    color: #fff; /* 見出しは白 */
+    color: #fff;
 }
 
 p {
-    color: #fff; /* 段落も白に */
+    color: #fff;
 }
 
 /* 上部のリンク */
 .top-links {
     position: fixed;
-    top: 20px; /* 上部に配置 */
-    right: 20px; /* 右端に配置 */
+    top: 20px;
+    right: 20px;
     display: flex;
     gap: 20px;
-    z-index: 100; /* 上に表示 */
+    z-index: 100;
 }
 
 .top-links a {
@@ -45,17 +44,17 @@ p {
     background-color: #ddd;
 }
 
-/* Twitterウィジェットを右側に固定 */
+/* Twitterウィジェットのスタイル */
 .twitter-widget {
     position: fixed;
-    top: 100px; /* 上部リンクと重ならないように少し下げる */
+    top: 100px;
     right: 20px;
     width: 300px;
     height: 500px;
     border: 1px solid #ddd;
     padding: 10px;
     background-color: #fff;
-    z-index: 10; /* 上部リンクより下に表示 */
+    z-index: 10;
 }
 
 .twitter-widget iframe {
@@ -64,11 +63,27 @@ p {
     border: none;
 }
 
+/* ×ボタンのスタイル */
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 24px;
+    color: #333;
+    cursor: pointer;
+    background: none;
+    border: none;
+}
+
+.close-btn:hover {
+    color: #d9534f; /* 赤色に変更 */
+}
+
 /* コンテンツ部分 */
 .content {
-    margin-right: 350px; /* 右側にTwitterウィジェットのスペースを確保 */
+    margin-right: 350px;
     padding: 20px;
-    z-index: 50; /* Twitterウィジェットの後ろに表示されるように */
+    z-index: 50;
 }
 
 nav a {
