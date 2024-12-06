@@ -1,9 +1,63 @@
-/* 背景画像を設定 */
+/* style.css */
 body {
-    background-image: url('https://github.com/komacchan/ourband/raw/main/backtest.jpg');
-    background-size: cover; /* 画像を画面全体に合わせる */
-    background-position: center center; /* 画像を中央に配置 */
-    background-attachment: fixed; /* スクロールしても背景が固定される */
-    margin: 0; /* ページ全体の余白をリセット */
-    height: 100vh; /* 画面全体の高さに背景を合わせる */
+    background-image: url('backtest.jpg'); /* 背景画像 */
+    background-size: cover; /* 画像が画面全体にフィット */
+    background-position: center center; /* 中央に配置 */
+    background-repeat: no-repeat; /* 繰り返しなし */
+    font-family: Arial, sans-serif;
+    text-align: center;
+    padding: 50px;
+}
+
+h1 {
+    color: #333;
+}
+
+p {
+    color: #555;
+}
+
+/* 上部のリンクを右上に配置 */
+.top-links {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    display: flex;
+    gap: 20px;
+}
+
+.top-links a {
+    text-decoration: none;
+    font-size: 18px;
+    color: #333;
+    background-color: #fff;
+    padding: 10px 15px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+.top-links a:hover {
+    background-color: #ddd;
+}
+
+/* Twitterウィジェットを右側に固定 */
+.twitter-widget {
+    position: fixed;
+    top: 100px;
+    right: 20px;
+    width: 300px;
+    height: 500px;
+    border: 1px solid #ddd;
+    padding: 10px;
+    background-color: #fff;
+}
+
+.twitter-widget iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+.content {
+    margin-right: 350px; /* 右側のツイートウィジェットのスペース分だけ内容を左に寄せる */
 }
