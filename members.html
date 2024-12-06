@@ -15,21 +15,93 @@
             font-size: 36px;
             color: #333;
         }
-        p {
-            color: #555;
+        table {
+            width: 80%;
+            margin: 20px auto;
+            border-collapse: collapse;
+            border: 1px solid #ddd;
+        }
+        th, td {
+            padding: 15px;
+            text-align: center;
+            border: 1px solid #ddd;
+        }
+        th {
+            background-color: #f4f4f4;
+        }
+        td img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
         }
     </style>
 </head>
 <body>
     <h1>メンバー紹介</h1>
     <p>メンバー紹介だよぉ。</p>
-    <ul>
-        <li>ボーカル-Sho</li>
-        <li>ギター-キヨ</li>
-       <li>ギター-ぎわしー</li>
-        <li>ベース-つらみ</li>
-        <li>ドラム-狛江</li>
-    </ul>
+    <table>
+        <thead>
+            <tr>
+                <th>プロフィール写真</th>
+                <th>名前</th>
+                <th>担当</th>
+                <th>経歴</th>
+                <th>好きなもの</th>
+                <th>一言</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- メンバー1 -->
+            <tr>
+                <td><img src="member1.jpg" alt="メンバー1の写真"></td>
+                <td>Sho</td>
+                <td>ボーカル</td>
+                <td>歌が上手い。</td>
+                <td>XXXX</td>
+                <td>XXXX</td>
+            </tr>
+            <!-- メンバー2 -->
+            <tr>
+                <td><img src="member2.jpg" alt="メンバー2の写真"></td>
+                <td>キヨ</td>
+                <td>ギター</td>
+                <td>会計士。</td>
+                <td>Suhr</td>
+                <td>「イギリス大陸」</td>
+            </tr>
+            <!-- メンバー3 -->
+            <tr>
+                <td><img src="member3.jpg" alt="メンバー3の写真"></td>
+                <td>ぎわしー</td>
+                <td>ギター</td>
+                <td>経理。</td>
+                <td>きたいくよ</td>
+                <td>「泣きアニメ」</td>
+            </tr>
+            <!-- メンバー4 -->
+            <tr>
+                <td><img src="member4.jpg" alt="メンバー4の写真"></td>
+                <td>つらみ</td>
+                <td>ベース</td>
+                <td>バイク。</td>
+                <td>鬼殺し</td>
+                <td>「助けてくれ」</td>
+            </tr>
+            <!-- メンバー5 -->
+            <tr>
+                <td><img src="member5.jpg" alt="メンバー5の写真"></td>
+                <td>狛江</td>
+                <td>ドラム・バンドマスター</td>
+                <td>オーケストラとかメタルとか。</td>
+                <td>楽しい事</td>
+                <td>「殺してくれ」</td>
+            </tr>
+        </tbody>
+    </table>
     <p><a href="index.html">ホームに戻るよぉ</a></p>
 </body>
 </html>
