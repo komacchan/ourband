@@ -1,10 +1,10 @@
 /* 背景画像設定 */
 body {
     background-image: url('backtest.jpg'); /* 背景画像 */
-    background-position: center center; /* 画面中央に配置 */
+    background-position: top center; /* 背景画像を上部中央に配置 */
     background-repeat: no-repeat; /* 繰り返しなし */
     background-attachment: fixed; /* スクロールに合わせて背景画像を固定 */
-    background-size: 100% 100%; /* 縦横比を無視して背景を全画面表示 */
+    background-size: cover; /* 画面全体にフィットするようにリサイズ */
     font-family: Arial, sans-serif;
     text-align: center;
     margin: 0;
